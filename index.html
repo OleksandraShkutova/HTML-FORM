@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>String inputs</legend>
+            <label>
+                Name:
+                <input 
+                    type="text" 
+                    name="first-name" 
+                    placeholder="your name" 
+                    pattern="[A-Z][a-z]{1,19}"
+                    value="" 
+                    autofocus 
+                    required/>
+            </label>
+                   <!-- 
+            <label>
+                Email
+                <input type="email" name="email" placeholder="dfgh@bnnn.fgj"/>
+            </label>
+            <label>
+                Password
+            <input type="password" name="password" placeholder="8-16 символів"/>
+            </label>
+            <label>
+                url
+                <input type="url" name="url" placeholder="addres instagram"/>
+            </label>
+            <label>
+                tel:
+                <input type="tel" name="tel" placeholder="+380668845046" value="+380"/>
+            </label>
+            <label>
+                search
+                <input type="search" name="search-text" placeholder="whot you search?">
+            </label>
+        -->
+            
+        </fieldset>
+        <fieldset>
+            <legend>Number inputs</legend>
+            <label>
+                Quantity
+                <input type="number" name="quantity" min="5" max="100" step="5"/>
+            </label>
+            <label>
+                Valume
+                <input type="range" name="volume"/>
+            </label> 
+        </fieldset>
+        <fieldset>
+            <legend>Data inputs</legend>
+            <!-- min max stap -->
+            <label>
+                <span>Date:</span>
+                <input type="date" name="date"/>
+            </label>
+            <br />
+            <label>
+                <span>Datetime:</span>
+                <input type="datetime-local" name="datetime" />
+            </label>
+            <br />
+            <label>
+                <span>Time:</span>
+                <input type="time" name="time" />
+            </label>
+            <br />
+            <label>
+                <span>Month:</span>
+                <input type="month" name="month" />
+            </label>
+            <br />
+            <label>
+                <span>Week:</span>
+                <input type="week" name="week" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>File</legend>
+            <label>
+                File
+                <input type="file" name="user-foto" multiple/>
+            </label>
+        </fieldset>
+         <fieldset>
+            <legend>File</legend>
+            <label>
+                Color
+                <input type="color" name="color"/>
+            </label>
+        </fieldset>
+        <br/>
+
+        <!-- hidden не видно в інтерфейсі, але в прзмітці є -->
+        <input type="hidden" value="Ukraine" name="country"/>
+        <br/>
+        <input type="button" value="button" />
+        <br/>
+
+        <!-- фото-кнопка -->
+        <input type="image" src="#" alt="sent"/>
+        
+        <fieldset>
+            <!-- Обераємо один з де-ох, name однаковий для групи, 
+             checked як булевський атребут дозволяє встановити за за мовчуванням-->
+            <legend>Gender:</legend>
+            <label><input name="gender" type="radio" value="Male" />Male</label>
+            <label><input name="gender" type="radio" value="Female" />Female</label>
+            <label><input name="gender" type="radio" value="Other" checked />Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Prefs:</legend>
+            <label><input type="checkbox" name="prefs" value="pets" /> Pets</label>
+            <label><input type="checkbox" name="prefs" value="cars" /> Cars</label>
+            <label><input type="checkbox" name="prefs" value="tech" /> Tech</label>
+        </fieldset>
+
+        <!-- select, textarea  ПОЧИТАТИ-->
+        <button type="submit">send</button>
+        <button type="reset">reset</button>
+    <!-- 
+        <label for="first-name1">Name:</label>
+        <input id="first-name1" name="first-name" type="text"/>
+    -->
+    </form>
+</body>
+</html>
